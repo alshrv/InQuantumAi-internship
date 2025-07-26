@@ -1,0 +1,35 @@
+{
+  "name": "inquantumai-internship",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/index.js",
+  "scripts": {
+    "lint": "eslint .",
+    "format": "eslint . --fix",
+    "typecheck": "tsc",
+    "build": "tsc --noEmit false",
+    "dev": "tsc-watch --onSuccess \"tsx ./src/index.ts\"",
+    "start": "tsc && tsx ./src/index.ts",
+    "start:force": "tsx ./src/index.ts",
+    "format:prt": "prettier --write .",
+    "format:check": "prettier --check ."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "packageManager": "pnpm@10.12.1",
+  "dependencies": {
+    "dotenv": "^17.2.1",
+    "express": "^5.1.0"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.32.0",
+    "@types/express": "^5.0.3",
+    "@types/node": "^24.1.0",
+    "eslint": "^9.32.0",
+    "prettier": "^3.6.2",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.3",
+    "typescript-eslint": "^8.38.0"
+  }
+}
